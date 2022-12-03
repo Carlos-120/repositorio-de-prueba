@@ -100,6 +100,7 @@ img {
 /*=======================fhfjdkgjhk==================== provar */
 section,
 footer {
+    margin-bottom: 0px;
     padding: 4rem 1rem;
 }
 
@@ -221,10 +222,15 @@ button {
     top: 0;
 }
 
+.home {
+    margin-bottom: 0px;
+}
+
 .home__container {
     position: relative;
     row-gap: 2rem;
     padding: var(--header-height) 0 3rem;
+    margin-bottom: 0px;
 }
 
 .home__image {
@@ -233,6 +239,13 @@ button {
     width: clamp(min(320px, 340px), 85vw, 445px);
     height: auto;
     margin: 0 auto;
+}
+
+.home__image>img {
+    border-radius: 70px;
+    height: 350px;
+    margin-bottom: 15px;
+
 }
 
 
@@ -281,20 +294,21 @@ button {
     margin: 12px;
 }
 
+.experiencia>h2 {
 
+    margin: 0px;
+}
+
+
+.Experiencia__flex,
+.Experiencia__mod {
+    margin: 1px;
+}
 
 .Experiencia__flex {
-    margin: 1px;
-    color: #adadad;
+    border-bottom: #474545 solid 2px;
 }
 
-.Experiencia__container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    margin: 1px;
-    border-bottom: #474545 solid;
-    align-items: flex-end;
-}
 
 .Experiencia__mod {
     color: #adadad;
@@ -319,6 +333,8 @@ button {
     width: 800px;
     margin-bottom: 0px;
 }
+
+
 
 .imajen-port>img {
     width: 100%;
@@ -347,6 +363,7 @@ button {
 /* ejghdshgsoijgsl */
 @media screen and (min-width: 768px) {
     section {
+
         padding: 1rem 0 1rem;
     }
 
@@ -405,6 +422,26 @@ button {
     }
 
 
+    .Experiencia__flex {
+        border: none;
+        margin: 1px;
+        color: #adadad;
+    }
+
+    .Experiencia__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        margin: 1px;
+        border-bottom: #474545 solid;
+        align-items: flex-end;
+    }
+
+    .Experiencia__mod {
+        color: #adadad;
+        margin: 0;
+        padding: 0;
+    }
+
     .Experiencia__container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -421,7 +458,8 @@ button {
     }
 
     .imajen-port {
-        width: 30%;
+
+        width: 33%;
         margin-bottom: 10px;
     }
 
