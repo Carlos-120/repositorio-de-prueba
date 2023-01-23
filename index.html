@@ -11,6 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
     rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
   <title>Portafolio</title>
   <link rel="stylesheet" href="/assets/CSS/style.css">
 
@@ -20,7 +21,7 @@
   <header class="header">
     <nav class="navbar grid--container">
       <a class="navbar__logo" href="#">
-        <i class='bx bxs-user-circle'></i>carlos_.120</a>
+        <i class='bx bxs-user-circle'></i>Carlos_.120</a>
       <div class="navbar__menu ">
         <button class="btn__close">
           <i class='bx bx-x navbar__icon'></i>
@@ -38,14 +39,14 @@
 
           <li class="navbar__item"><a class="navbar__link" href="#contacto">Contacto</a></li>
         </ul>
-
+      </div>
+      <div class="Mode__color">
+        <button id="bdark">Mode</button>
       </div>
       <button class="btn__open">
         <i class='bx bx-menu navbar__icon'></i>
       </button>
     </nav>
-
-
   </header>
 
 
@@ -53,7 +54,7 @@
     <section id="home" class="home">
       <div class="home__container grid--container">
         <div class="home__image">
-          <img src="/assets/img/IMG20210107173007-min.jpg" alt="Rectangle">
+          <img src="/assets/img/im.png.jpg" alt="Rectangle">
         </div>
         <div class="home__info">
           <h2 class="saludo">Hola, soy Carlos</h2>
@@ -63,13 +64,12 @@
         <div class="home__info">
           <h1 class="home__title">Diseñador y<br> desarrollador web</h1>
           <div class="home__social">
-            <a class="home__social-link" href="#"><img src="assets/Íconos/linkedin.svg" alt="Íconos"></a>
+            <a class="home__social-link" href="#"><i class='iconos__social bx bxl-linkedin-square'></i></a>
 
-            <a class="home__social-link" href="#"><img src="assets/Íconos/instagram.svg" alt="Íconos"></a>
+            <a class="home__social-link" href="#"><i class='iconos__social bx bxl-instagram'></i></a>
 
-            <a class="home__social-link" href="#"><img src="assets/Íconos/twitter.svg" alt="Íconos"></a>
+            <a class="home__social-link" href="#"><i class='iconos__social bx bxl-twitter'></i></a>
           </div>
-
 
 
           <p>Soy desarrollador web , apasionado por la tecnologia la programacion</p>
@@ -83,12 +83,9 @@
     <section id="descripcion" class="abaut section">
       <h2 class="section__title">Acerca de Mí</h2>
       <div class="about__container grid--container">
-        <p class="about__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-          asperiores saepe suscipit ratione
-          illo
-          ipsam incidunt molestias voluptatum ad fuga voluptate, mollitia voluptates minima ducimus sit
-          laborum
-          hic ea consequuntur.</p>
+        <p class="about__description">I am a creative person, I like to work in a team, I have proven to be a suitable
+          person in the backend and front-end programming environment, prepared for new challenges and challenges.
+          Teamwork is one of the best challenges I like because of the synchronization of each coworker.</p>
       </div>
 
     </section>
@@ -99,9 +96,9 @@
 
         <div class="habilidades__card">
           <ul class="habilidades__card--top">
-            <li><img src="assets/Íconos/mobile.svg" alt="galeria-port"></li>
+            <li><i class='iconos__font-size bx bx-mobile-alt'></i><i class='iconos__font-size bx bx-desktop'></i></li>
             <li>
-              <p class=" grid--container">Mobile app design</p>
+              <p class=" grid--container">Mobile app design y Desk</p>
             </li>
           </ul>
 
@@ -112,7 +109,7 @@
 
 
           <ul class="habilidades__card--top">
-            <li> <img src="assets/Íconos/motion.svg" alt="galeria-port"></li>
+            <li> <i class='iconos__font-size bx bx-move'></i></li>
             <li>
               <p class="grid--container">Motion Design</p>
             </li>
@@ -124,9 +121,9 @@
 
         <div class="habilidades__card ">
           <ul class="habilidades__card--top">
-            <li><img src="assets/Íconos/material.svg" alt="galeria-port"></li>
+            <li><i class='iconos__font-size bx bxl-99designs'></i><i class='iconos__font-size bx bxs-layout'></i></li>
             <li>
-              <p class="">Creacion de sistemas de diseño</p>
+              <p class="">Creation of design systems</p>
             </li>
           </ul>
 
@@ -135,7 +132,7 @@
 
         <div class="habilidades__card ">
           <ul class="habilidades__card--top">
-            <li><img src="assets/Íconos/web.svg" alt="galeria-port"></li>
+            <li><i class='iconos__font-size bx bx-window'></i></li>
             <li>
               <p class="grid--container">Desarrollo web</p>
             </li>
@@ -144,36 +141,33 @@
         </div>
       </article>
 
-
-
-
     </section>
     <section id="experiencia" class="experiencia">
       <h2>Experiencia</h2>
       <br>
       <div class="Experiencia__container grid--container">
-        <h3>Visual designer</h3>
-        <p class="Experiencia__mod ">2016-2018
+        <h3>Front-end developer</h3>
+        <p class="Experiencia__mod ">2022-2022
 
         </p>
-        <p class="Experiencia__flex ">Wizeline</p>
+        <p class="Experiencia__flex ">Academlo</p>
       </div>
       <div class="Experiencia__container grid--container">
-        <h3>Pruduct designer</h3>
+        <h3>Product designer</h3>
         <p class="Experiencia__mod ">
-          2018-2019
+          2022-2023
 
         </p>
-        <p class="Experiencia__flex grid--container">Microsoft</p>
+        <p class="Experiencia__flex grid--container">Academlo</p>
       </div>
 
       <div class="Experiencia__container grid--container">
-        <h3>Ui Engineer</h3>
+        <h3>Developer backend</h3>
         <p class="Experiencia__mod ">
-          2019-2021
+          2022-2023
 
         </p>
-        <p class="Experiencia__flex grid--container">Google</p>
+        <p class="Experiencia__flex grid--container">Academlo</p>
       </div>
 
 
@@ -202,7 +196,7 @@
     <div class="section__grid grid--container">
       <div class="servicio-conten ">
         <ul class="servicio__conten--serv">
-          <li><img src="assets/Íconos/phone.svg" alt="telefono"></li>
+          <li><i class='telefono__contact bx bx-phone'></i></li>
           <li>
             <p class=" grid--container ">Numero de celular</p>
           </li>
@@ -214,7 +208,7 @@
 
       <div class="servicio__conten--serv ">
         <ul class="servicio-cont">
-          <li><img src="/assets/Íconos/mail-1.svg" alt="telefono"></li>
+          <li><i class='telefono__contact bx bx-envelope'></i></li>
           <li>
             <p class="grid--container">Email</p>
           </li>
@@ -230,7 +224,7 @@
 
     </div>
     <br><br>
-    <h3 class="">Hecho con 🤍 en Academlo</h3>
+    <h3 class="">Hecho con <i class='bx bxs-heart'></i> en Academlo</h3>
   </footer>
   <script>
 
@@ -244,6 +238,32 @@
 
     btnClose.onclick = function () {
       Menu.classList.remove('show--menu')
+    };
+
+
+  </script>
+  <script>
+
+    const bdark = document.querySelector('#bdark');
+    const body = document.querySelector('body');
+
+    load();
+
+    bdark.addEventListener('click', e => {
+      body.classList.toggle('darkmode')
+      store(body.classList.contains('darkmode'));
+    });
+    function load() {
+      const darkmode = localStorage.getItem('darkmode');
+      if (!darkmode) {
+        store('false');
+      } else if (darkmode == 'true') {
+        body.classList.add('darkmode')
+      }
+
+    }
+    function store(value) {
+      localStorage.setItem('darkmode', value)
     }
 
   </script>

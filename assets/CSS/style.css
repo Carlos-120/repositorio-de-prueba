@@ -27,10 +27,7 @@
 
 }
 
-* {
 
-    color: #fff;
-}
 
 @media (min-width: 768px) {
     :root {
@@ -46,6 +43,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+
 }
 
 *,
@@ -61,9 +59,15 @@ html {
 body {
     font-family: var(--boby-font);
     font-size: var(--normal-font-size);
-    background-color: black;
+    background-color: #acdff8;
     margin: 0;
+    transition: all 0.4s;
+}
 
+.modo__body {
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 h1,
@@ -94,7 +98,9 @@ a {
 img {
     max-width: 100%;
     height: auto;
-
+    border: 1px solid #c1f1e7ee;
+    transition: all 0s ease;
+    box-shadow: 0.1rem .5rem 1rem #717473f5;
 }
 
 /*=======================fhfjdkgjhk==================== provar */
@@ -112,6 +118,30 @@ footer {
     margin: 0 var(--mr-3);
 }
 
+.Mode__color {
+    width: 80px;
+    height: 30px;
+    transition: transform .3s ease-in-out;
+}
+
+.Mode__color:hover {
+    transform: translateY(-4px);
+}
+
+.Mode__color>button {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #75c7ff;
+    border: none;
+}
+
+.Mode__color>button:hover {
+    background-color: #75c8ffb6;
+}
+
+/* ======        BTN       ===== */
 .btn {
     display: inline-block;
     padding: 1.5rem 4rem;
@@ -123,21 +153,25 @@ footer {
 }
 
 .btn--primary {
-    background-color: #2c2929;
-    color: #adadaa;
+    color: #080808;
 }
 
 .btn:hover {
     transform: translateY(-4px);
 }
 
+/* ===============  Header =============== */
 .header {
     position: fixed;
+    background-color: #1568a9e8;
     top: 0;
     left: 0;
     width: 100%;
     box-shadow: var(--box-shadow);
     z-index: var(--z-fixed);
+    border-bottom: 1px solid #25252500;
+    transition: all 0s ease;
+    box-shadow: 0.1rem .5rem 1rem #033f32cf;
 }
 
 .navbar {
@@ -154,7 +188,7 @@ footer {
         left: 0;
         width: 100%;
         border-radius: 0 0 12px 12px;
-        background-color: #0f0e0e;
+        background-color: #1568a9e8;
         box-shadow: 0px 1px 9px 2px #00000024;
         padding: 4.5rem 1rem 2rem;
         transition: .5s;
@@ -162,22 +196,25 @@ footer {
 }
 
 .saludo {
-    color: #adadad;
+    color: #623ca1;
 }
 
+
+
 .navbar__logo {
+    font-size: 18px;
     display: flex;
     align-items: center;
     column-gap: .25rem;
     font-weight: var(--font-semi-bold);
-    color: #dadada;
+    color: #adadad;
 }
 
 .btn__close {
     position: absolute;
     top: var(--mr-2);
     right: var(--mr-2);
-    background-color: #553737;
+    background-color: #ebe6ea;
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -191,31 +228,50 @@ footer {
 .btn__close,
 .navbar__logo i {
     font-size: 2.2rem;
-    color: #dadada;
+    color: #141212;
+    cursor: pointer;
 }
 
-button {
-    background-color: #000000;
+.btn__open {
+    background-color: #75c8ffb6;
 }
+
+.navbar__logo {
+    color: #0f0e0e;
+}
+
+.navbar__logo>i {
+    font-size: 50px;
+}
+
 
 .btn__close:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(236, 1, 1);
 }
 
 .navbar__list {
     display: flex;
+
     flex-direction: column;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .navbar__item {
     margin-bottom: var(--mr-2);
+
 }
 
 .navbar__link {
-    color: #adadad;
+    transition: transform .3s ease-in-out;
+    color: #130707;
     font-size: 1.2rem;
     font-weight: var(--font-semi-bold);
+}
+
+.navbar__link:hover {
+    transform: translateY(-4px);
 }
 
 .show--menu {
@@ -242,6 +298,7 @@ button {
 }
 
 .home__image>img {
+    min-width: 377px;
     border-radius: 70px;
     height: 350px;
     margin-bottom: 15px;
@@ -258,12 +315,23 @@ button {
     row-gap: var(--mr-2);
 }
 
+.iconos__social {
+    font-size: 50px;
+    color: #000000;
+
+}
+
+.iconos__social:hover {
+    font-size: 65px;
+}
+
 .home__social-link {
     justify-content: center;
     width: 80px;
     font-size: 1.7rem;
     transition: color .3s;
     margin: 8px;
+
 }
 
 .home__social-link:hover {
@@ -275,11 +343,23 @@ button {
     margin: 0;
     margin-bottom: var(--mr-2);
     text-transform: uppercase;
+}
 
+.iconos__font-size {
+    font-size: 50px;
+    margin: 10px;
 }
 
 .home__buttons {
     text-align: center;
+}
+
+.home__buttons>button {
+    background-color: #75c7ff;
+}
+
+.home__buttons>button:hover {
+    background-color: #75c7ff;
 }
 
 .habilidades__cards {
@@ -345,6 +425,14 @@ button {
 
 /*============= contacto ===================*/
 
+.telefono__contact {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.telefono__contact:hover {
+    transform: translateY(-4px);
+}
 
 .section__grid {
 
@@ -358,6 +446,10 @@ button {
 
 .servicio__conten--serv>img {
     justify-content: center;
+}
+
+.contacto {
+    background-color: #006da56b;
 }
 
 /* ejghdshgsoijgsl */
@@ -374,7 +466,7 @@ button {
 
     .navbar__list {
         flex-direction: row;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .navbar__item {
@@ -477,4 +569,98 @@ button {
     .grid--container {
         margin: 0 auto;
     }
+}
+
+.telefono__contact {
+    font-size: 50px;
+}
+
+/* === cambio de modo a claro y oscuro ==== */
+
+.darkmode .btn__open {
+    background-color: #252525;
+}
+
+.darkmode .btn__open:hover {
+    background-color: #474545;
+}
+
+body.darkmode {
+    background-color: #000000;
+    color: white;
+}
+
+.darkmode button {
+    color: white;
+}
+
+.darkmode .Mode__color>button {
+    background-color: #2c2929;
+}
+
+.darkmode .Mode__color>button:hover {
+    background-color: #535353;
+}
+
+.darkmode .btn__open,
+.darkmode .btn__close,
+.darkmode .navbar__logo i {
+    font-size: 2.2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.darkmode .header {
+    background-color: #000000;
+    border-bottom: 1px solid #585858;
+    transition: all 0s ease;
+    box-shadow: 0.1rem .5rem 1rem #535353;
+}
+
+.darkmode .saludo {
+    color: #1698dc;
+}
+
+/* ======================== Iconos =========================== */
+.darkmode .iconos__social {
+    color: white;
+    font-size: 50px;
+}
+
+.darkmode .iconos__social:hover {
+    font-size: 65px;
+}
+
+.darkmode .navbar__logo {
+    color: #dad3d3;
+    font-size: 18px;
+}
+
+.darkmode .navbar__logo i {
+    font-size: 50px;
+}
+
+.darkmode .navbar__list {
+    background-color: #000000d2;
+}
+
+.darkmode .btn__close,
+.darkmode .navbar__menu {
+    background-color: #000000d2;
+}
+
+.darkmode .btn__close:hover {
+    background-color: rgb(236, 1, 1);
+}
+
+.darkmode .navbar__link {
+    color: white;
+}
+
+.darkmode .home__buttons>button {
+    background-color: #595959;
+}
+
+.darkmode .home__buttons>button:hover {
+    background-color: #808080;
 }
