@@ -14,9 +14,7 @@
   <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
   <title>Portafolio</title>
   <link rel="stylesheet" href="/assets/CSS/style.css">
-
 </head>
-
 <body>
   <header class="header">
     <nav class="navbar grid--container">
@@ -26,7 +24,6 @@
         <button class="btn__close">
           <i class='bx bx-x navbar__icon'></i>
         </button>
-
         <ul class="navbar__list">
           <li class="navbar__item"><a class="navbar__link" href="#home">Home</a></li>
 
@@ -48,8 +45,6 @@
       </button>
     </nav>
   </header>
-
-
   <main>
     <section id="home" class="home">
       <div class="home__container grid--container">
@@ -58,9 +53,7 @@
         </div>
         <div class="home__info">
           <h2 class="saludo">Hola, soy Carlos</h2>
-
         </div>
-
         <div class="home__info">
           <h1 class="home__title">Diseñador y<br> desarrollador web</h1>
           <div class="home__social">
@@ -70,11 +63,8 @@
 
             <a class="home__social-link" href="#"><i class='iconos__social bx bxl-twitter'></i></a>
           </div>
-
-
           <p>Soy desarrollador web , apasionado por la tecnologia la programacion</p>
         </div>
-
         <div class="home__buttons">
           <button class="btn btn--primary" type="button">Descarga CV</button>
         </div>
@@ -87,13 +77,10 @@
           person in the backend and front-end programming environment, prepared for new challenges and challenges.
           Teamwork is one of the best challenges I like because of the synchronization of each coworker.</p>
       </div>
-
     </section>
     <section id="habilidades" class="habilidades">
-
       <h2>Mis Habilidades</h2>
       <article class="top grid--container">
-
         <div class="habilidades__card">
           <ul class="habilidades__card--top">
             <li><i class='iconos__font-size bx bx-mobile-alt'></i><i class='iconos__font-size bx bx-desktop'></i></li>
@@ -103,11 +90,7 @@
           </ul>
 
         </div>
-
-
         <div class="habilidades__card ">
-
-
           <ul class="habilidades__card--top">
             <li> <i class='iconos__font-size bx bx-move'></i></li>
             <li>
@@ -117,8 +100,6 @@
           </ul>
 
         </div>
-
-
         <div class="habilidades__card ">
           <ul class="habilidades__card--top">
             <li><i class='iconos__font-size bx bxl-99designs'></i><i class='iconos__font-size bx bxs-layout'></i></li>
@@ -128,8 +109,6 @@
           </ul>
 
         </div>
-
-
         <div class="habilidades__card ">
           <ul class="habilidades__card--top">
             <li><i class='iconos__font-size bx bx-window'></i></li>
@@ -165,29 +144,25 @@
         <h3>Developer backend</h3>
         <p class="Experiencia__mod ">
           2022-2023
-
         </p>
         <p class="Experiencia__flex grid--container">Academlo</p>
       </div>
-
-
-
-
     </section>
     <section id="portafolio" class="portafolio">
       <h2>Portafolio</h2>
       <br>
+      <br>
+      <br>
       <div class="galeria-port">
-
-        <div class="imajen-port">
-          <img src="assets/img/ejemplo-1.png" alt="1">
-        </div>
-        <div class="imajen-port">
-          <img src="assets/img/ejemplo-2.png" alt="2">
-        </div>
-        <div class="imajen-port">
-          <img src="assets/img/ejemplo-3.png" alt="3">
-        </div>
+<div class="imajen-port">
+  <div id="contenedor-imagen">
+ <a href="#" onclick="abrirUrl()"><img class="mi-imagen" id="mi-imagen" src="imagen1.jpg" alt="" title="Proyecto creado en Academlo"></a>
+  </div>
+  <br><br>
+        <button class="btn_clic" onclick="cambiarImagen()">Next</button>  
+        <script src="next.js"></script>
+</div>
+        
       </div>
     </section>
   </main>
@@ -217,38 +192,25 @@
           </li>
         </ul>
       </div>
-
-
-
-
-
     </div>
     <br><br>
     <h3 class="">Hecho con <i class='bx bxs-heart'></i> en Academlo</h3>
   </footer>
   <script>
-
     const btnMenu = document.querySelector('.btn__open')
     const btnClose = document.querySelector('.btn__close')
     const Menu = document.querySelector('.navbar__menu')
-
     btnMenu.onclick = function () {
       Menu.classList.add('show--menu')
     }
-
     btnClose.onclick = function () {
       Menu.classList.remove('show--menu')
     };
-
-
   </script>
   <script>
-
     const bdark = document.querySelector('#bdark');
     const body = document.querySelector('body');
-
     load();
-
     bdark.addEventListener('click', e => {
       body.classList.toggle('darkmode')
       store(body.classList.contains('darkmode'));
@@ -265,7 +227,6 @@
     function store(value) {
       localStorage.setItem('darkmode', value)
     }
-
   </script>
 </body>
 
