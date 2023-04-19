@@ -59,7 +59,7 @@ html {
 body {
     font-family: var(--boby-font);
     font-size: var(--normal-font-size);
-    background-color: #acdff8;
+    background-color: #73b4d4;
     margin: 0;
     transition: all 0.4s;
 }
@@ -98,7 +98,6 @@ a {
 img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #c1f1e7ee;
     transition: all 0s ease;
     box-shadow: 0.1rem .5rem 1rem #717473f5;
 }
@@ -109,8 +108,6 @@ footer {
     margin-bottom: 0px;
     padding: 4rem 1rem;
 }
-
-
 
 .grid--container {
     max-width: 1024px;
@@ -243,7 +240,7 @@ footer {
     background-color: #1698dc;
     color: blue;
     border: none;
-    border-radius: 3px;
+    border-radius: 30px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -261,9 +258,7 @@ footer {
     width: 100%;
     height: 400px ;
   }
-  img:hover{
-    opacity: 0.7;
-  }
+ 
 .btn__open {
     background-color: #75c8ffb6;
 }
@@ -453,7 +448,7 @@ footer {
 }
 
 .contacto {
-    background-color: #006da56b;
+    background-color: #084ceb6b;
 }
 
 /* ejghdshgsoijgsl */
@@ -552,11 +547,7 @@ footer {
         flex-wrap: wrap;
 
     }
-
-    
 }
-
-
 
 @media (min-width: 1024px) {
     .grid--container {
@@ -570,11 +561,11 @@ footer {
 
 /* === cambio de modo a claro y oscuro ==== */
 .darkmode .btn_clic{
-    background-color: #141212;
-    color: #565656;
+    background-color: #595959;
+    color: #dad7d7;
 }
 .darkmode .btn_clic:hover{
-    background-color: #2c2b2b;
+    background-color: #808080;
 }
 .darkmode .btn__open {
     background-color: #252525;
